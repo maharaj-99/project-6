@@ -1,0 +1,1086 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://tentcomm.com/wp-content/uploads/2026/04/421294067_6fc90801-2b4c-48d6-80ee-4d871573a10c-scaled.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* Header Part Start */
+header{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header img{
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    float: left;
+    padding: 5px 10px;
+    margin-left: 25px;
+    cursor: pointer;
+    border: none;
+}
+header ul li a{
+    color: #122c89;
+    text-decoration: none;
+}
+header ul li:hover > a, header ul li a.active{
+    color: rgba(25, 25, 141, 0.8);
+    border-bottom: 2px solid;
+    text-shadow: 0px 0px 5px 3px rgb(25, 25, 141,);
+    transition: all 0.2s linear;
+}
+header .fa-solid{
+    display: none;
+}
+/* Header Part End */
+
+
+
+/* Section-1 Part Start */
+.hero{
+    width: 100%;
+    height: 400px;
+}
+.hero h1{
+    width: 90%;
+    font-size: 65px;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.3;
+    color: #122c89;
+    margin: auto;
+}
+.hero p{
+    width: 60%;
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    word-spacing: 2px;
+    line-height: 1.8;
+    color: #122c89;
+    margin: auto;
+    margin-top: 25px;
+}
+.hero button{
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #122c89;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.hero button:hover{
+    color: #122c89;
+    background-color: white;
+    transform: scale(1.2);
+}
+/* Section-1 Part End */
+
+
+
+/* Section-2 Part Start */
+.brand{
+    width: 100%;
+    height: 150px;
+    margin-top: 60px;
+}
+.brand h2{
+    font-size: 30px;
+    font-family: "poppins";
+    font-weight: 600;
+    text-align: center;
+    color: #122c89;
+}
+.brand .top{
+    margin-top: 40px;
+    display: flex;
+    overflow-x: auto;
+    gap: 40px;
+}
+.brand .top::-webkit-scrollbar{
+    display: none;
+}
+.brand .slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    animation: spin 40s infinite linear;
+}
+@keyframes spin{
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+.brand .card{
+    width: 150px;
+    height: 55px;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.brand img{
+    width: 150px;
+    height: 55px;
+}
+/* Section-2 Part End */
+
+
+
+/* Section-3 Part Start */
+.service{
+    width: 80%;
+    height: 670px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+}
+.service div{
+    width: 50%;
+}
+.service h1{
+    width: 80%;
+    font-size: 50px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    color: #122c89;
+}
+.service p{
+    width: 90%;
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    word-spacing: 1px;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-top: 30px;
+}
+.service button {
+    font-size: 19px;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: white;
+    background-color: #122c89;
+    padding: 10px 35px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.service button:hover{
+    transform: scale(1.15);
+}
+.service img{
+    width: 540px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Section-3 Part End */
+
+
+
+/* Section-4 Part Start */
+.career{
+    width: 82%;;
+    height: 600px;
+    margin: auto;
+    margin-top: 70px;
+    border-bottom: 1px solid;
+    display: grid;
+    grid-template-rows: 350px 160px;
+    grid-template-columns: repeat(4, 22%);
+    gap: 45px;
+}
+.career .box-1{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+.career .box-1 h1{
+    width: 70%;
+    font-size: 45px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.4;
+    color: #122c89;
+}
+.career .box-2{
+    grid-row: 1/2;
+    grid-column: 3/5;
+}
+.career .box-2 p{
+    width: 95%;
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    word-spacing: 3px;
+    line-height: 1.7;
+    opacity: 0.8;
+}
+.career .box-2 span{
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.career .box-3, .box-4, .box-5, .box-6{
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.9;
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+.career .box-3, .box-5{
+    background-color: rgba(201, 241, 241, 0.6);
+}
+.career .box-4, .box-6{
+    background-color: rgba(212, 209, 209, 0.6);
+}
+/* Section-4 Part End */
+
+
+
+/* Section-5 Part Start */
+.chat{
+    width: 80%;
+    height: 254px;
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.chat img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.chat .chat-book{
+    width: 100%;
+    height: 254px;
+    margin: auto;
+    position: relative;
+    top: -258px;
+    background-color: rgba(20, 20, 90, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.chat .chat-book h1{
+    font-size: 40px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.chat .chat-book p{
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.chat .chat-book button{
+    font-size: 21px;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #122c89;
+    background-color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.chat .chat-book button:hover{
+    transform: scale(1.1);
+}
+/* Section-5 Part End */
+
+
+
+/* Section-6 Part Start */
+.team{
+    width: 80%;
+    height: 520px;
+    margin: auto;
+    margin-top: 100px;
+    border-bottom: 1px solid;
+}
+.team h1{
+    font-size: 35px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    word-spacing: 2px;
+    color: #122c89;
+}
+.team .membar{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team .membar div{
+    width: 22%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.team .membar img{
+    width: 236px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.2s linear;
+}
+.team .membar div:hover >img{
+    transform: scale(1.1);
+}
+.team .membar p{
+    font-size: 14px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 10px;
+}
+.team button{
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #122c89;
+    padding: 12px 40px;
+    margin-top: 30px;
+    margin-left: 38%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.team button:hover{
+    transform: scale(1.1);
+}
+/* Section-6 Part End */
+
+
+
+/* Section-7 Part Start */
+.review{
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    margin-top: 70px;
+    border-bottom: 1px solid;
+}
+.review h1{
+    font-size: 40px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.review .review-box{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review .review-box div{
+    width: 31%;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.review .review-box div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.review .review-box div h2{
+    font-size: 80px;
+    font-family: "Bebas Neue", Sans-serif;
+    font-weight: 800;
+    color: #122c89;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.review .review-box div p{
+    font-size: 25px;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    padding-right: 40px;
+    opacity: 0.8;
+}
+.review .review-box div a{
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    color: #122c89;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: all  0.2s linear;
+}
+.review .review-box div a:hover{
+    text-decoration:underline;
+}
+.review .rating{
+    width: 334px;
+    height: 500px;
+    color: white;
+    background-color: rgba(7, 7, 7, 0.6);
+    border-radius: 10px;
+    position: relative;
+    top: -500px;
+}
+.review .rating h3{
+    font-size: 80px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-top: 300px;
+    padding-left: 30px;
+}
+.review .rating p{
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    padding-left: 30px;
+}
+/* Section-7 Part End */
+
+
+
+/* Section-8 Part Start */
+.result{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.result div{
+    width: 50%;
+}
+.result h5{
+    font-size: 14px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+.result h1{
+    font-size: 50px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+.result span{
+    color: #122c89;
+}
+.result p{
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+.result button{
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: white;
+    background-color: #122c89;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.result button:hover{
+    transform: scale(1.1);
+}
+.result div img{
+    width: 540px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+/* Section-8 Part End */
+
+
+
+/* Section-9 Part Start */
+.business{
+    width: 82%;
+    height: auto;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.business div{
+    width: 50%;
+}
+.business img{
+    width: 545px;
+    height: 315px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.business p{
+    font-size: 14px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.business h1{
+    font-size: 30px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.business span{
+    color: #122c89;
+}
+.business button{
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: #122c89;
+    padding: 10px 30px;
+    margin-top: 25px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.business button:hover{
+    transform: scale(1.1);
+}
+/* Section-9 Part End */
+
+
+
+footer{
+    width: 100%;
+    height: 450px;
+    color: white;
+    background-image: url(https://tentcomm.com/wp-content/uploads/2026/06/Footer.png);
+    border-radius: 70px 70px 0 0;
+}
+footer .footer-part{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.footer-part div{
+    width: 405px;
+    height: 50%;
+}
+.footer-part h1{
+    width: 80%;
+    font-size: 50px;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 40px;
+}
+.footer-part span{
+    font-family: normal;
+    font-style: italic;
+}
+.footer-part h2{
+    font-size: 25px;
+    font-family: "poppiins", sans-serif;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-left: 30px;
+}
+.footer-part textarea{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.footer-part .icon{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.footer-part i{
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: #122c89;
+    padding-top: 10px;
+    margin-left: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.footer-part i:hover{
+    transform: scale(1.08);
+}
+.footer-part h5{
+    font-size: 17px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    margin-top: 100px;
+}
+.footer-part p{
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.footer-part h6{
+    font-size: 17px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.footer-part .pass{
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+
+
+@media (max-width: 767px) {
+    header{
+        width: 100%;
+        height: 70px;
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+    header ul{
+        display: none;
+    }
+    header .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: blue;
+        cursor: pointer;
+    }
+
+    .hero{
+        width: 100%;
+        height: auto;
+    }
+    .hero h1{
+        width: 80%;
+        font-size: 35px;
+        font-weight: 700;
+        margin-top: 100px;
+    }
+    .hero p{
+        width: 80%;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .hero button{
+        font-size: 17px;
+    }
+
+    .brand{
+        width: 100%;
+        height: auto;
+    }
+    .brand h2{
+        font-size: 25px;
+    }
+    .brand .top{
+        margin-top: 20px;
+    }
+    .brand .card{
+        width: 120px;
+        height: 50px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .brand img{
+        width: 130px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .service{
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+        display: block;
+
+        div{
+            width: 100%;
+        }
+
+        h1{
+        font-size: 31px;
+        text-align: center;
+        margin: auto;
+        }
+
+        p{
+            width: 80%;
+            font-size: 16px;
+            line-height: 1.4;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        button{
+            font-size: 15px;
+            margin-left: 35%;
+        }
+        img{
+            width: 80%;
+            height: 500px;
+            object-fit: cover;
+            margin-top: 40px;
+            margin-left: 11%;
+        }
+    }
+
+    .career{
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        padding-bottom: 50px;
+        display: block;
+
+        .box-1 h1{
+            width: 80%;
+            font-size: 30px;
+            text-align: center;
+            line-height: 1.2;
+            margin: auto;
+        }
+        .box-2 p{
+            width: 85%;
+            font-size: 15px;
+            line-height: 1.4;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .box-2 span{
+            font-size: 16px;
+        }
+        .box-3, .box-4, .box-5, .box-6{
+            width: 60%;
+            line-height: 1.6;
+            margin: auto;
+            margin-top: 40px;
+            padding: 25px 0;
+        }
+    }
+
+
+    .chat{
+        width: 95%;
+        margin-top: 50px;
+
+        .chat-book h1{
+            font-size: 30px;
+        }
+        .chat-book p{
+            font-size: 14px;
+        }
+        .chat-book button{
+            font-size: 13px;
+            word-spacing: 0;
+            letter-spacing: 0;
+        }
+    }
+
+
+    .team{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        padding-bottom: 40px;
+
+        h1{
+            font-size: 25px;
+        }
+        .membar{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            div{
+                width: 235px;
+                margin-top: 20px;
+            }
+        }
+        button{
+            font-size: 15px;
+            margin-top: 40px;
+            margin-left: 28%;
+        }
+    }
+
+
+    .review{
+        width: 100%;
+        height: 1400px;
+
+
+        h1{
+            font-size: 25px;
+        }
+        .review-box{
+            width: 100%;
+            display: block;
+
+            div{
+                width: 65%;
+                height: 400px;
+                margin: auto;
+                margin-top: 40px;
+
+                h2{
+                    font-size: 60px;
+                }
+                p{
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        .rating{
+            width: 65%;
+            height: 400px;
+            margin: auto;
+            top: -1280px;
+
+            h3{
+                font-size: 50px;
+                padding-top: 250px;
+            }
+            p{
+                font-size: 15px;
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+
+    .result{
+        width: 100%;
+        height: auto;
+        display: block;
+
+        div{
+            width: 80%;
+            margin: auto;
+        }
+
+        h5{
+            font-size: 13px;
+            letter-spacing: 0px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 15px;
+        }
+        button{
+            font-size: 13px;
+        }
+        div img{
+            width: 100%;
+            height: 300px;
+            margin-top: 40px;
+            margin-left: 0px;
+            object-fit: cover;
+        }
+    }
+
+
+    .business{
+        width: 100%;
+        height: auto;
+        display: block;
+
+        div{
+            width: 80%;
+            margin: auto;
+
+            img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+        p{
+            font-size: 13px;
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+        h1{
+            font-size: 20px;
+            margin-left: 0px;
+        }
+        button{
+            font-size: 13px;
+            margin-left: 0px;
+        }
+    }
+
+
+    footer{
+        width: 100%;
+        height: auto;
+
+        .footer-part{
+            width: 95%;
+            margin: auto;
+            
+            
+            div{
+                width: 50%;
+                height: auto;
+            }
+            .foot-name{
+                width: 100%;
+            }
+            h1{
+                width: 70%;
+                font-size: 30px;
+                margin-left: 40px;
+            }
+            h2{
+                font-size: 18px;
+            }
+            textarea{
+                width: 150px;
+                font-size: 13px;
+                padding-top: 10px;
+            }
+            .icon{
+                width: 200px;
+            }
+            i{
+                width: 30px;
+                height: 30px;
+                font-size: 13px;
+                padding-top: 8px;
+            }
+            h5{
+                font-size: 18px;
+                margin-top: 0px;
+                margin-left: 30px;
+            }
+            p{
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin-top: 5px;
+                margin-left: 30px;
+            }
+            h6{
+                font-size: 18px;
+                margin-top: 35px;
+            }
+            .pass{
+                font-size: 13px;
+                font-weight: 500;
+                margin-top: 10px;
+            }
+        }
+    }
+}
