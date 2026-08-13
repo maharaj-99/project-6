@@ -774,6 +774,7 @@ footer .footer-part{
         display: block;
         font-size: 30px;
         color: blue;
+        background-color: none;
         border: none;
         cursor: pointer;
     }
