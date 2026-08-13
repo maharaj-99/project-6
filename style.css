@@ -486,7 +486,7 @@ header .fa-xmark{
     text-decoration:underline;
 }
 .review .rating{
-    width: 334px;
+    width: 31%;
     height: 500px;
     color: white;
     background-color: rgba(7, 7, 7, 0.6);
