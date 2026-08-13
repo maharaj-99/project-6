@@ -8,7 +8,7 @@ function clickNow() {
 
     navLinks.classList.toggle("show");
 
-    if(navLinksclassList.contains("show")){
+    if(navLinks.classList.contains("show")){
         
         bars.style.display = "none";
         xMark.style.display = "block";
