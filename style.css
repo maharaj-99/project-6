@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(https://tentcomm.com/wp-content/uploads/2026/04/421294067_6fc90801-2b4c-48d6-80ee-4d871573a10c-scaled.jpg);
     background-size: cover;
@@ -759,8 +762,7 @@ footer .footer-part{
         justify-content: flex-start;
         align-items: flex-start;
         border-radius: 10px;
-        box-shadow: 0px 0px 10px 2px gray;
-        box-shadow-opacity: 0.5;
+        box-shadow: 0px 0px 10px 2px rgba(133, 131, 131, 0.6);
         background-color: white;
         padding: 10px;
         transition: all 0.5s ease;
@@ -775,7 +777,7 @@ footer .footer-part{
         display: block;
         font-size: 30px;
         color: blue;
-        background-color: none;
+        background-color: transparent;
         border: none;
         cursor: pointer;
     }
@@ -1105,6 +1107,7 @@ footer .footer-part{
                 font-size: 13px;
                 font-weight: 500;
                 margin-top: 10px;
+                margin-bottom: 20px;
             }
         }
     }
